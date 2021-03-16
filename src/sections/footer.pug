@@ -1,0 +1,35 @@
+footer.footer
+  .container.footer__container
+    .footer__copyright
+      .copyright
+        .copyright__year 
+          h2.copyright__year-char 2019
+        .copyright__description
+          h3.copyright__description-name
+            |Михаил 
+            br
+            |Бахирев
+          h4.copyright__description-info 
+            |Личный сайт
+            br
+            |веб-разработчика
+    .footer__data
+      .footer-menu
+        nav.nav.nav--footer
+          ul.nav__list             
+            each item in items
+              li.nav__item
+                a(href=`${item.link}`).nav__link #{item.name}
+      .footer__data-columns
+        .footer__data-col
+          article.footer__text Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool
+          .footer__socials.socials.socials--rounded
+            ul.socials__list                      
+              each social in socials
+                li.socials__item
+                  a(href=`${social.link}`).socials__link 
+                    +icon(`${social.name}`, 'socials__icon')
+        .footer__data-col
+          article.footer__text
+            p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете
+          .footer__autor Martin Golding

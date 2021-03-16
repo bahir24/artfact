@@ -1,0 +1,39 @@
+.skill {
+
+  fill: transparent;
+  stroke: gray;
+  stroke-width: 10px;
+  border: none;
+  stroke-dasharray: 402;
+  stroke-width: 3px;
+  text-align: center;
+}
+
+.skill__shape {
+  transform: rotate(-90deg);
+  width: 140px;
+  height: 140px;
+}
+
+.skill__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+$i: 0;
+
+@for $i from 0 through 100 {
+  .skill__circle-#{$i} {
+    @if $i < 50 {
+      stroke-dashoffset: 402 - $i*4;
+    }
+
+    @else {
+      stroke-dashoffset: 400 - $i*4;
+    }
+
+    stroke-width: 10px;
+  }
+}

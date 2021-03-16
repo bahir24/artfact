@@ -1,0 +1,72 @@
+section.target
+  .container.target__container
+    .target__title
+      h1.section-title.section-title--small Чем я могу быть полезен вам
+      .target__description
+        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+    ul.dev-skills
+      - 
+        var skills = [
+          ['frontend',
+            [
+              {
+              name: 'HTML5',
+              percent: '0'
+              },{
+              name: 'CSS3',
+              percent: '17'
+              },{
+              name: 'Javascript',
+              percent: '33'
+              },{
+              name: 'Jquery и vue.js',
+              percent: '49'
+              }
+            ]
+          ],
+          ['workflow',
+            [
+              {  
+              name: 'GIT',
+              percent: '65'
+              },{
+              name: 'Terminal',
+              percent: '81'
+              },{
+              name: 'Gulp',
+              percent: '93'
+              },{
+              name: 'Webpack',
+              percent: '100'
+              }
+            ]
+          ]                 
+        ]
+      each item in skills
+        li.dev-skills__item
+          .skills-kit
+            h3.skills-kit__title #{item[0]}
+            ul.skills-kit__list
+              each skill in item[1]
+                li.skills-kit__item
+                  .skill
+                    svg(
+                      viewbox="-2 -2 140 140"
+                      preserveAspectRatio="none"
+                      ).skill__shape
+                      circle(
+                        r="64"
+                        cx="68"
+                        cy="68"
+                      ).skill__shape-round
+                      circle(
+                        r="64"
+                        cx="68"
+                        cy="68"
+                        class=`skill__circle-${skill.percent}`
+                        stroke="url(#linear-gradient)"
+                        ).skill__shape-round
+                      lineargradient#linear-gradient
+                        stop(offset="0%" stop-color="#ea7400")
+                        stop(offset="100%" stop-color="#f29400")
+                    h4.skill__title #{skill.name}

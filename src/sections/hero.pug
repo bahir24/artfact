@@ -1,0 +1,30 @@
+section.hero
+  ul.parallax
+    li.parallax__layer(data-speed="0")
+      img(src="src/images/parallax/sky.png").parallax__pic
+    li.parallax__layer(data-speed="0.09")
+      img(src="src/images/parallax/mountain.png").parallax__pic
+    li.parallax__layer(data-speed="0.6")
+      img(src="src/images/parallax/train.png").parallax__pic
+    li.parallax__layer(data-speed="1.8")
+      img(src="src/images/parallax/ground.png").parallax__pic
+    li.parallax__layer(data-speed="1.8")
+      .parallax__pic
+    li.parallax__layer(data-speed="1.8")
+      .parallax__pic
+    li.parallax__layer(data-speed="1.8")
+      .parallax__pic
+  .hero__content
+    .owner
+      .owner__desc 
+        | Личный сайт
+        br
+        | веб-разработчика
+      .owner__name 
+        | Михаил 
+        br
+        | Бахирев                              
+  .hero__bottom-buttons
+    .scroll-down-btn 
+      h4.scroll-down-btn__name Скролл
+      +icon('scroll', 'scroll-down-btn__pic')

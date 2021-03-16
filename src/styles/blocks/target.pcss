@@ -1,0 +1,39 @@
+.target {
+  height: 100vh;
+  width: 100%;
+  background: bottom left / 35% auto no-repeat url('/src/images/background/hands_target.png'),
+    linear-gradient(to top, rgba(27, 31, 34, 0) 0%, #1b1f22 100%),
+    top right / 100% 94% no-repeat url('/src/images/background/target_bg.png'),
+    #fff;
+}
+
+.target__container {
+  color: #fff;
+  margin-right: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    margin: 0 auto;
+  }
+}
+
+.target__title {
+  padding: 1% 60% 1% 1%;
+  color: #fff;
+  margin-bottom: 65px;
+
+  @include desktop {
+    padding: 0% 22% 0;
+    margin-bottom: 30px;
+  }
+}
+
+.target__description {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}

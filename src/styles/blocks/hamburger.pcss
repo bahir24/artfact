@@ -1,0 +1,45 @@
+.hamburger-menu {
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: block;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 5px;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  &::before {
+    transform: translateY(-10px);
+  }
+
+  &::after {
+    transform: translateY(3px);
+  }
+}
+
+.nav-fullscreen {
+  display: none;
+}

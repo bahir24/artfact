@@ -1,0 +1,28 @@
+.header__container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header {
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  @include tablets {
+    justify-content: none;
+  }
+}
+
+.header__menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+
+  @include tablets {
+    display: none;
+  }
+}

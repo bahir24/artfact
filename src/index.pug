@@ -1,0 +1,23 @@
+include ./mixins.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Portfolio | main page
+  body
+    .wrapper
+      .maincontent
+        .container.header__container
+          include ./sections/header.pug
+        .start-section
+          include ./sections/hero.pug
+          include ./sections/about.pug
+        include ./sections/target.pug
+        section.works
+        .bottom-section
+          include /sections/reviews.pug
+          include /sections/form.pug         
+        include ./sections/footer.pug

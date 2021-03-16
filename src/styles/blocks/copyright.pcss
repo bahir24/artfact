@@ -1,0 +1,35 @@
+.copyright {
+  display: flex;
+  @include desktop {
+    flex-direction: column;
+  }
+}
+
+.copyright__year-char {
+  font-size: 48px;
+  font-weight: 600;
+  opacity: 0.1;
+  margin-right: 60px;
+  line-height: 48px;
+  margin-bottom: 10px;
+
+  &:before {
+    content: "\00A9";
+    line-height: 48px;
+  }
+}
+
+.copyright__description-name {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.copyright__description-info {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.15;
+  line-height: 30px;
+}

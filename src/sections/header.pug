@@ -1,0 +1,52 @@
+header.header
+  .logo МБ
+  .header__menu
+    nav.nav
+      ul.nav__list
+        - 
+          var items= [ 
+            {
+                name: 'Главная',
+                link: 'https://first'
+            },{
+                name: 'Обо мне',
+                link: 'https://second'
+            },{
+                name: 'Навыки',
+                link: 'https://third'
+            },{
+                name: 'Работы',
+                link: 'https://forth'
+            },{
+                name: 'Отзывы',
+                link: 'https://fifth'
+            },{
+                name: 'Связаться',
+                link: 'https://sixth'
+            } 
+          ]
+        each item in items                       
+          li.nav__item
+            a(href=`${item.link}`).nav__link #{item.name}
+  .socials
+    ul.socials__list
+      - 
+        var socials= [ 
+          {
+              name: 'vk',
+              link: 'https://vk'
+          },{
+              name: 'insta',
+              link: 'https://inst'
+          },{
+              name: 'github',
+              link: 'https://github'
+          }
+        ]
+      each social in socials
+        li.socials__item
+          a(href=`${social.link}`).socials__link 
+            +icon(`${social.name}`, 'socials__icon')
+  button.hamburger-menu
+    .hamburger
+      nav.nav.nav-fullscreen

@@ -1,0 +1,38 @@
+section.about
+  .container.about__container
+    .about__left
+      .dev
+        .dev__avatar
+          img(src="src/images/dev_pic/dev_pic.png" alt="").dev__avatar-pic
+        .dev__description
+          table.dev__description-table
+            - 
+              var decsription= [
+                {
+                    tdl: 'Проживаю',
+                    td2: 'Санкт-Петербург'
+                },{
+                    tdl: 'Возраст',
+                    td2: '30 лет'
+                },{
+                    tdl: 'Родился',
+                    td2: '24 февраля 1989'
+                }
+              ]
+            each row in decsription
+                tr.dev__description-row
+                  td.dev__description-cell #{row.tdl}
+                  td.dev__description-cell #{row.td2}
+    .about__right
+      .more
+        h2.more__hello Рад видеть вас здесь!
+        h1.more__name Михаил Бахирев
+        .more__work 
+          p
+            | Я разрабатываю сайты и приложения.
+            br
+            | Мне нравится использовать современные технологии.
+            br
+            | Некоторые из моих работ вы сможете увидеть на этом сайте.
+        .more__loftschool
+          p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Для его создания использовались самые современные инструменты разработки.

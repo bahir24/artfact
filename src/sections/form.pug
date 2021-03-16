@@ -1,0 +1,40 @@
+section.form
+  h1.section-title Связаться со мной
+  .form-wrapper
+    form.feedback
+      ul.feedback__list
+        - 
+          var fields = [
+            [
+              {
+                name: 'user',
+                head: 'Введите ваше имя',
+                placeholder: 'Ковальчук Дмитрий',
+                tag: 'input'
+              },{
+                name: 'envelope',
+                head: 'Введите ваш email',
+                placeholder: 'loftschool@study.com',
+                tag: 'input'
+              }
+            ],
+            [
+              {
+                name: 'message',
+                head: 'Сообщение к письму',
+                placeholder:'Требуется ваша помощь в создании сайта. Интересуют сроки и цена вопроса.',
+                tag: 'textarea'
+              }
+            ]
+          ]
+        each field in fields
+          li.feedback__row
+            - for (var i = 0; i < field.length; i++)
+              .field
+                label.field__label
+                  .field__icon(class=`field__icon--${field[i].tag}`)
+                    +icon(`${field[i].name}`, 'field__icon-pic')
+                  .field__input(class=`field__input--${field[i].tag}`)
+                    h3.field__input-head #{field[i].head}
+                    #{field[i].tag}(type="text" placeholder=`${field[i].placeholder}`).field__input-text
+      button.feedback__button Отправить
