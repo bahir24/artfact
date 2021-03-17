@@ -104,14 +104,24 @@ $(window).on( 'load', function() {
 });
 
 
+
+
+
 /*------------------Preloader------------------*/
 $(window).on( 'load', function(){
 
+
 	$(".loader").delay(1000).fadeOut("slow");
-	$(".content_name .hello").addClass('animated zoomIn');
-	$(".content_name .name").addClass('animated zoomIn');
-	$(".content_prof p").addClass('animated zoomIn');
-	$(".content_download p").addClass('animated zoomIn');
+	// let activeSlide = $('#heroSlider').find('.active');
+    // $(activeSlide).find('.hello').addClass('animated zoomIn');
+    // $(activeSlide).find('.name').addClass('animated zoomIn');
+    // $(activeSlide).find('.content_prof').find('p').addClass('animated zoomIn');
+    // $(activeSlide).find('.content_download').find('p').addClass('animated zoomIn');
+
+	// $(".content_name .hello").addClass('animated zoomIn');
+	// $(".content_name .name").addClass('animated zoomIn');
+	// $(".content_prof p").addClass('animated zoomIn');
+	// $(".content_download p").addClass('animated zoomIn');
 
 });
 
