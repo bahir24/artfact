@@ -112,15 +112,16 @@ class Pug {
      * @return {Array|Object}
      */
     webpackPlugins() {
-        let newFile = path.resolve(this.output + '/index.html');
+        let newPath = path.resolve(this.output);
         // console.log(src);
         // console.log(output);
-        console.log(newFile);
+        // console.log(newFile);
 
         // Example:
         // return new webpack.ProvidePlugin(this.aliases);
         return new HtmlWebpackPlugin({
-            filename: newFile
+            publicPath: newPath,
+            filename: 'index.html'
         });
     }
 

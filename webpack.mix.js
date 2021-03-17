@@ -11,9 +11,14 @@ let mix = require('webpack-mix');
  |
  */
 
-mix.js('src/js/app.js', 'dist/')
-// .sass('src/scss/main.scss', 'dist/')
+mix.js('src/js/app.js', 'dist/js/')
+.sass('src/scss/main.scss', 'dist/css/')
 .pug('src/pug/index.pug', 'dist/');
+
+// if (mix.inProduction()) {
+//     mix.version();
+// };
+
 
 // Full API
 // mix.js(src, output);
