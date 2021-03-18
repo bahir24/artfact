@@ -175,6 +175,21 @@ section {
 .contact-header{
   height: 14vh;
 }
+.contact-header span{
+  font-size: 1.5rem!important;
+}
+.contact-header p a,
+.contact-header span a{
+  font-weight: 700;
+  color: #000;
+}
+.contact-header p a:hover,
+.contact-header span a:hover{
+  color: rgb(255, 36, 36);
+}
+.contact-header p{
+  font-size: 1.2rem!important;
+}
 .contact-header > .container > .section_padding{
   padding: 3vh 0;
 }
@@ -198,7 +213,7 @@ section .section_header h2::before {
   left: 0%;
   margin-top: 15px;
   position: absolute;
-  width: 39%;
+  width: 30%;
   background-color: rgba(0, 0, 0, 0.27); }
 
 section .section_header h2::after {
@@ -207,7 +222,7 @@ section .section_header h2::after {
   right: 0%;
   margin-top: 15px;
   position: absolute;
-  width: 39%;
+  width: 30%;
   background-color: rgba(0, 0, 0, 0.27); }
 
 /* Preloader  --------------------------*/
@@ -639,7 +654,11 @@ display: block;
   z-index: 10;
   font-weight: 900;
 }
-
+.logo_img{
+  max-height: 55px;
+  z-index: 100;
+  position: relative;
+}
 .logo_img a {
   background: transparent url('../img/logo.png') no-repeat left center;
   height: 60px;
