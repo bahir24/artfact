@@ -1,33 +1,106 @@
-var observeObject = function () {
-    var _class = {
-      init: function (selector, callback) {
-        var elements = document.querySelectorAll(selector);
-        // console.log(elements);
-        try {
-            var observer = new MutationObserver(function (mutations) {
-                mutations.forEach(function (mutation) {
-                  callback(mutation.target);
-                });
-              });
-            elements.forEach(element => {
-                observer.observe(element, {
-                    attributes: true,
-                    // subtree: true,
-                    // attributeOldValue: true
-                });
-                // console.log(element);
-            });
+// function animateContent(slide){
+//   if(slide.classlist.contain('active')){
 
-        } catch (z) {
-          element.addEventListener('DOMAttrModified', function (e) {
-            callback(e.target);
-          }, false);
-        }
-      }
-    };
+//   } else {
 
-    return _class;
-  }();
+//   }
+
+// }
+
+window.onload = function(){
+  let firstSlide = document.querySelectorAll('.carousel-item')[0];
+  let firstSlideText = firstSlide.querySelectorAll('.content_lines p');
+  firstSlideText.forEach(element => {
+    setTimeout(addAnimateClass, 1000, element, 'animate__fadeInLeft');
+    console.log(element);
+  });
+  let contactHeaderItems = document.querySelectorAll('.contact-header .animate__fadeInUp');
+  contactHeaderItems.forEach(element => {
+    addAnimateClass(element, 'animate__animated');
+  });
+  console.log(contactHeaderItems);
+  // let oldContentBlock = slides[e.from].querySelectorAll('.content_lines p');
+
+}
+
+
+$('#heroSlider').on('slid.bs.carousel', function (e) {
+  let slides = this.querySelectorAll('.carousel-item');
+  let oldContentBlock = slides[e.from].querySelectorAll('.content_lines p');
+  let activeContentBlock = e.relatedTarget.querySelectorAll('.content_lines p');
+  if(e.from % 2){
+    oldContentBlock.forEach(element => {
+      addAnimateClass(element, 'animate__fadeInRight');
+    });
+    activeContentBlock.forEach(element => {
+      addAnimateClass(element, 'animate__fadeInLeft');
+    });
+    // var animateClass =
+  } else {
+    oldContentBlock.forEach(element => {
+      addAnimateClass(element, 'animate__fadeInLeft');
+    });
+    activeContentBlock.forEach(element => {
+      addAnimateClass(element, 'animate__fadeInRight');
+    });
+  }
+
+
+
+
+  console.log();
+  // content_lines
+  // do something…
+});
+
+function addAnimateClass(paragraph, animateClass){
+  // setTimeout(paragraph.classList.toggle(animateClass), 1000);
+  paragraph.classList.toggle(animateClass);
+  // paragraph.classList.toggle('animated');
+  // paragraph.classList.toggle(animateClass);
+
+}
+// $('#heroSlider').on('slide.bs.carousel', function (e) {
+//   let oldContentBlock = e.relatedTarget.querySelectorAll('.content_lines p');
+//   stairsDelay(oldContentBlock);
+//   // let contentBlock = e.relatedTarget.querySelectorAll('.content_lines p');
+//   // stairsDelay(contentBlock);
+
+//   console.log();
+//   // content_lines
+//   // do something…
+// });
+
+// var observeObject = function () {
+//     var _class = {
+//       init: function (selector, callback) {
+//         var elements = document.querySelectorAll(selector);
+//         // console.log(elements);
+//         try {
+//             var observer = new MutationObserver(function (mutations) {
+//                 mutations.forEach(function (mutation) {
+//                   callback(mutation.target);
+//                 });
+//               });
+//             elements.forEach(element => {
+//                 observer.observe(element, {
+//                     attributes: true,
+//                     // subtree: true,
+//                     // attributeOldValue: true
+//                 });
+//                 // console.log(element);
+//             });
+
+//         } catch (z) {
+//           element.addEventListener('DOMAttrModified', function (e) {
+//             callback(e.target);
+//           }, false);
+//         }
+//       }
+//     };
+
+//     return _class;
+//   }();
 
 
 
@@ -45,30 +118,28 @@ var observeObject = function () {
 // $('#heroSlider').on('slide.bs.carousel', function (slide) {
 //     console.log(slide.target);
 //   })
-function onloadAnimate(){
-    observeObject.init('.carousel-item', function (target) {
-        if(target.classList.contains('active')){
-            $(target).find('.hello').addClass('animated zoomIn');
-            $(target).find('.name').addClass('animated zoomIn');
-            $(target).find('.content_prof').find('p').addClass('animated zoomIn');
-            $(target).find('.content_download').find('p').addClass('animated zoomIn');
-        } else {
-            $(target).find('.hello').removeClass('animated zoomIn');
-            $(target).find('.name').removeClass('animated zoomIn');
-            $(target).find('.content_prof').find('p').removeClass('animated zoomIn');
-            $(target).find('.content_download').find('p').removeClass('animated zoomIn');
+// function onloadAnimate(){
+//     observeObject.init('.carousel-item', function (target) {
+//         if(target.classList.contains('active')){
+//             $(target).find('.hello').addClass('animated zoomIn');
+//             $(target).find('.name').addClass('animated zoomIn');
+//             $(target).find('.content_prof').find('p').addClass('animated zoomIn');
+//         } else {
+//             $(target).find('.hello').removeClass('animated zoomIn');
+//             $(target).find('.name').removeClass('animated zoomIn');
+//             $(target).find('.content_prof').find('p').removeClass('animated zoomIn');
 
-        }
+//         }
 
-    });
-    // let firstSlide = [...document.querySelectorAll('.carousel-item.active')];
-    // $(firstSlide).find('.hello').addClass('animated zoomIn');
-    // $(firstSlide).find('.name').addClass('animated zoomIn');
-    // $(firstSlide).find('.content_prof').find('p').addClass('animated zoomIn');
-    // $(firstSlide).find('.content_download').find('p').addClass('animated zoomIn');
+//     });
+//     // let firstSlide = [...document.querySelectorAll('.carousel-item.active')];
+//     // $(firstSlide).find('.hello').addClass('animated zoomIn');
+//     // $(firstSlide).find('.name').addClass('animated zoomIn');
+//     // $(firstSlide).find('.content_prof').find('p').addClass('animated zoomIn');
+//     // $(firstSlide).find('.content_download').find('p').addClass('animated zoomIn');
 
-}
-setTimeout(onloadAnimate, 2000);
+// }
+// setTimeout(onloadAnimate, 2000);
 // $(window).on( 'load', function(){
 
 

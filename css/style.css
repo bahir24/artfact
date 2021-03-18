@@ -113,7 +113,7 @@ section {
 }
 .hero .carousel{
   overflow: hidden;
-  height: 91vh;
+  height: 77vh;
 }
 .carousel .carousel-inner{
   height: 100%;
@@ -134,19 +134,49 @@ section {
 .carousel-item__slide{
   height: 100%;
   object-fit: contain;
-  object-position: center;
-  width: 60%;
+  display: flex;
+  /* object-position: top; */
+  /* width: 70%; */
 }
 .carousel-item__text{
-  width: 40%;
+  /* width: 30%; */
+  display: flex;
+  flex: 1;
+  align-items: center;
 }
+
 .carousel-item:nth-child(even) .carousel-item__slide,
 .carousel-item:nth-child(odd) .carousel-item__text{
   order: 1;
+  object-position: bottom right;
 }
 .carousel-item:nth-child(odd) .carousel-item__slide,
 .carousel-item:nth-child(even) .carousel-item__text{
   order: 0;
+  object-position: bottom left;
+}
+.carousel-item:nth-child(odd) .carousel-item__text{
+  justify-content: center;
+
+}
+.carousel-item:nth-child(even) .carousel-item__text{
+  justify-content: center;
+
+}
+.carousel-item:nth-child(odd) .carousel-item__text .content_head{
+  text-align: right;
+
+}
+.carousel-item:nth-child(even) .carousel-item__text .content_head{
+  text-align: left;
+
+}
+
+.contact-header{
+  height: 14vh;
+}
+.contact-header > .container > .section_padding{
+  padding: 3vh 0;
 }
 
 section .section_header {
@@ -453,8 +483,6 @@ display: block;
   padding-top: 100px;
   margin: -15em 0 0;
 }
-
-.head_bg .content_head .content_download,
 .head_bg .content_head .content_name,
 .head_bg .content_head .content_prof {
   text-align: left;
@@ -463,8 +491,7 @@ display: block;
 }
 .content_name .hello,
 .content_name .name,
-.content_prof p,
-.content_download p{
+.content_prof p{
   /* opacity: 0; */
 }
 
