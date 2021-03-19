@@ -898,10 +898,6 @@ section .invisible-header{
 /* Contact -----------------------------*/
 #contact .section_header{
   margin-bottom: 30px; }
-
-  #contact .contact_block{
-    max-height: 200vh;
-  }
 #contact .contact_block .col-md-4{
   padding: 50px 0;
   text-align: center;
