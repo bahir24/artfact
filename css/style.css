@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-/*
-  Title: Brendon
-*/
-
 /* ---------------------------------------------------------------------- */
 /*  Import styles
 /* ---------------------------------------------------------------------- */
@@ -135,11 +131,8 @@ section {
   height: 100%;
   object-fit: contain;
   display: flex;
-  /* object-position: top; */
-  /* max-width: 80%; */
 }
 .carousel-item__text{
-  /* width: 30%; */
   display: flex;
   flex: 1;
   align-items: center;
@@ -193,9 +186,6 @@ section {
 .contact-header p a:hover,
 .contact-header span a:hover{
   color: rgb(255, 36, 36);
-}
-.contact-header p{
-  /* font-size: 1.2rem!important; */
 }
 .contact-header > .container > .section_padding{
   padding: 3vh 0;
@@ -514,12 +504,6 @@ display: block;
   padding: 0;
   margin: 20px 0 0 0;
 }
-.content_name .hello,
-.content_name .name,
-.content_prof p{
-  /* opacity: 0; */
-}
-
 
 .head_bg .content_head .content_name .hello {
   -webkit-animation-duration: .7s;
@@ -646,8 +630,6 @@ display: block;
     opacity: 1;
   }
 }
-
-
 /* Logo */
 
 .logo {
@@ -675,11 +657,6 @@ display: block;
   height: 60px;
   display: block;
 }
-/* .logo_img a img{
-  object-fit: contain;
-  object-position: center center;
-  height: 100%;
-} */
 
 .none {
   font: 0/0 a;
@@ -720,10 +697,6 @@ section .section_padding {
   border: 1px solid #000;
   margin: 0 15px;
   padding: 50px 10px;
-
-}
-.about_block .about_block_border p{
-  /* flex: 1; */
 
 }
 
@@ -1161,9 +1134,6 @@ footer {
 
 /* BLOG PAGE */
 
-.blog-section {
-}
-
 .blog-section-bg {
   background: #fafafa;
 }
@@ -1276,9 +1246,6 @@ footer {
 .blog-wrapper .blog-content .content-box .content {
   padding: 0 30px 0 30px;
   background-color: #fff;
-}
-
-.blog-wrapper .blog-content .content-box .content h4:hover {
 }
 
 .blog-wrapper .blog-content .content-box .content .blog-buttons {

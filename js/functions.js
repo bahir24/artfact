@@ -47,11 +47,6 @@ $(window).on( 'load', function() {
 
 	/*------------------ First Window Height Detected ------------------*/
 
-	// $(".head_bg").height($(window).height());
-	// $(window).on( 'resize', function(){
-	// 	$(".head_bg").height($(window).height());
-	// });
-
 
 	/*------------------ Animate WOW ------------------*/
 
@@ -105,10 +100,6 @@ $(window).on( 'load', function() {
 
 });
 
-
-
-
-
 /*------------------Preloader------------------*/
 $(window).on( 'load', function(){
 
@@ -123,6 +114,3 @@ $('.counter').countUp({
   'time': 2000,
   'delay': 10
 });
-
-
-
