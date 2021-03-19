@@ -445,7 +445,7 @@ section .section_header h2::after {
   background-color: transparent;
 }
 
-.toggle-mnu .on span:before {
+.toggle-mnu.on span:before {
   -webkit-transform: rotate(45deg) translate(-1px, 0);
   -ms-transform: rotate(45deg) translate(-1px, 0);
   transform: rotate(45deg) translate(-1px, 0);
