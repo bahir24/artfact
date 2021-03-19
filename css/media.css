@@ -306,9 +306,9 @@
         padding: 20px 0
     }
 
-    #contact .contact_block_border {
+    /* #contact .contact_block_border {
         height: 100%
-    }
+    } */
 
     .blog-pagination li.back:after {
         display: none

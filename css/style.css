@@ -391,7 +391,7 @@ section .section_header h2::after {
 /* Effect: border line */
 .head_bg .mnu_line .mnu .lamp,
 .blog_head_bg .mnu_line .mnu .lamp {
-  position: absolute !important;
+  position: absolute!important;
   height: 4px;
   bottom: -1px;
   background: #000;
@@ -445,7 +445,7 @@ section .section_header h2::after {
   background-color: transparent;
 }
 
-.toggle-mnu.on span:before {
+.toggle-mnu .on span:before {
   -webkit-transform: rotate(45deg) translate(-1px, 0);
   -ms-transform: rotate(45deg) translate(-1px, 0);
   transform: rotate(45deg) translate(-1px, 0);
@@ -498,8 +498,7 @@ display: block;
   padding-top: 100px;
   margin: -15em 0 0;
 }
-.head_bg .content_head .content_name,
-.head_bg .content_head .content_prof {
+.head_bg .content_head .content_name{
   text-align: left;
   padding: 0;
   margin: 20px 0 0 0;
@@ -508,6 +507,8 @@ display: block;
 .head_bg .content_head .content_name .hello {
   -webkit-animation-duration: .7s;
   -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  animation-duration: .7s;
 }
 
 .head_bg .content_head .content_name .name{
@@ -519,7 +520,9 @@ display: block;
   margin: 0;
   line-height: 1;
   -webkit-animation-duration: .5s;
+  animation-duration: .5s;
   -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
 }
 
 .head_bg .content_head .content_name p {
@@ -529,44 +532,6 @@ display: block;
   text-transform: none;
   letter-spacing: 1px;
   line-height: 3;
-}
-
-.head_bg .content_head .content_prof p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.0rem;
-  font-weight: 300;
-  text-transform: none;
-  padding: 0;
-  margin: 23px 0 30px 0;
-  line-height: 1;
-  -webkit-animation-duration: .5s;
-  -webkit-animation-delay: 2.3s;
-}
-
-.head_bg .content_head .content_download p {
-  line-height: 1;
-  -webkit-animation-duration: .5s;
-  -webkit-animation-delay: 2.7s;
-}
-
-.head_bg .content_head .content_download p a {
-  color: #000;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 1.4rem;
-  padding: 10px 20px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: 1px solid #000;
-}
-
-.head_bg .content_head .content_download p a:hover {
-  background: #000;
-  color: #fff;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
 }
 
 .scroll_bottom {
@@ -579,7 +544,9 @@ display: block;
 
 .scroll_bottom div {
   -webkit-animation-duration: .5s;
+  animation-duration: .5s;
   -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .scroll_bottom .arrows {
@@ -650,6 +617,7 @@ display: block;
   z-index: 100;
   width: 160px;
   position: relative;
+  font-size: 0;
   /* display: none; */
 }
 .logo_img a {
@@ -754,6 +722,9 @@ section .section_padding {
 
 section .section-title .section_header{
     margin-bottom: 30px;
+}
+section .invisible-header{
+  font-size: 0;
 }
 
 .portfolio_filter{
@@ -1001,6 +972,7 @@ form {
     }
     input:-webkit-autofill {
     -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
+    box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
     }
     form .textarea_block textarea:focus{
       box-shadow: none;
@@ -1169,7 +1141,9 @@ footer {
   margin: 0;
   line-height: 1;
   -webkit-animation-duration: .5s;
+  animation-duration: .5s;
   -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
 }
 
 .blog_head_bg .content_head .content_bottom_txt p {
