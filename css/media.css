@@ -1,35 +1,160 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .carousel-item__slide{
+    max-width: 80%;
+  }
   .contact-header p{
     font-size: 1rem;
   }
   .contact-header span{
-    font-size: 1.2rem!important;
+    font-size: 1.2rem;
+  }
+  #about .about_block h4{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
   }
   /**/ }
+  @media only screen and (max-width: 1024px) {
+    .carousel-item__slide{
+      max-width: 75%;
+    }
+    #counter span{
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    #counter p{
+      font-size: 1.5rem;
+    }
 
-/* Medium Devices, Desktops */
+  }
+
+
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 991px) {
+    .nav_block a{
+      font-size: 10px!important;
+    }
+  }
 @media only screen and (max-width: 992px) {
+  .hero{
+    height: unset;
+  }
+  .carousel-item__slide{
+    max-width: 70%;
+  }
+
+
+
+
   /**/ }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+
+
+
+
+  .toggle-mnu {
+    right: 22px;
+    top: 3px;
+  }
+
+  .toggle-mnu span,
+  .toggle-mnu span::after,
+  .toggle-mnu span::before {
+    background-color: #000;
+    height: 3px;
+  }
+  /* .contact-header > .container > .section_padding > .small_screen{
+    padding: 0!important;
+    font-size: .5rem;
+  } */
+
+}
 @media only screen and (max-width: 768px) {
-  .head_bg .mnu_line .logo {
-    text-align: left; }
-  .logo_img a {
-    background: transparent url('../img/logo.png') no-repeat center center; }
-  footer .logo a {
-      color: #588792; }
-  .head_bg .content_head .scroll_bottom {
-    padding-top: 20%; }
-  .blog-section-bg .blog-content,
-  .blog-single-bg .blog-content {
-    margin-right: 0px;
-} }
+
+  .contact-header .container{
+    max-width: 95%;
+  }
+  .contact-header .small_screen p{
+    font-size: .9rem;
+  }
+  .contact-header .small_screen{
+    padding: 0;
+  }
+  .contact-header .small_screen span{
+    font-size: .7rem;
+  }
+
+
+.head_bg .mnu_line .logo {
+  text-align: left;
+}
+
+.logo_img a {
+  background: center center/cover url('../img/logo/logo.png') no-repeat;
+}
+
+footer .logo a {
+  color: #588792;
+}
+
+.head_bg .content_head .scroll_bottom {
+  padding-top: 20%;
+}
+
+.blog-section-bg .blog-content,
+.blog-single-bg .blog-content {
+  margin-right: 0px;
+}
+.about  .small_screen{
+  width: 100%;
+}
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 640px) {
+
+  .hero .carousel{
+    height: 91%;
+  }
+  .carousel .carousel-item{
+    flex-direction: column;
+    height: 100%;
+  }
+  .carousel-item__slide{
+    flex: 1;
+    max-width: unset;
+    width: 100%;
+  }
+  .carousel-item .carousel-item__text {
+    font-size: .8rem;
+    order: 0!important;
+    object-position: center center;
+  }
+  .carousel-item .carousel-item__slide {
+    order: 1!important;
+    height: 40%;
+    object-position: bottom;
+  }
+  .carousel-item .carousel-item__text .content_head{
+    text-align: center;
+  }
+  .contact-header .small_screen p{
+    font-size: 1rem;
+  }
+  .contact-header .small_screen{
+    padding: 0;
+  }
+  .contact-header .small_screen span{
+    font-size: .8rem;
+  }
+  .content_lines .hello{
+    font-size: 1rem;
+  }
+
+
 
   .small_screen {
     padding: 20px 10px;
@@ -55,17 +180,14 @@
   }
 
   #about .about_block img {
-    top: -1px;
+    /* top: -1px; */
   }
 
   #about .about_block .col-md-3 {
     padding: 20px 0;
   }
 
-  .portfolio_filter ul li {
-    float: none;
-    margin: 10px 0;
-  }
+
 
   .blog_block {
     margin-bottom: 50px;
@@ -82,20 +204,21 @@
     padding: 20px 0;
   }
   #contact .contact_block img {
-    top: 6px;
+    /* top: 6px; */
   }
   #contact .contact_block_border {
     margin: 0 33px;
     padding: 36px 10px;
   }
-  .toggle-mnu {
-    right: 22px;
-    top: 3px;
-}
-.toggle-mnu span, .toggle-mnu span::after, .toggle-mnu span::before {
-    background-color: #000;
-    height: 3px;
-}
+  .contact_block .container h2::before,
+  .contact_block .container h2::after{
+    width: 15%;
+  }
+  .contact_form fieldset{
+    width: 100%;
+    padding: 0;
+  }
+
 .head_bg .overlay_color,
 .blog_head_bg .overlay_color {
   background: #fff;
@@ -152,9 +275,26 @@
     padding: 50px 0 25px 0;
   }
 }
+@media only screen and (max-width: 480px) {
+  .portfolio_filter ul li {
+    float: none;
+    margin: 10px 0;
+  }
+  .contact_block .container h2::before,
+  .contact_block .container h2::after{
+    width: 0%;
+  }
+  .portfolio .container h2::before,
+  .portfolio .container h2::after{
+    width: 0%;
+  }
+
+
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
+
   /**/ }
 
 /*==========  Mobile First  ==========*/
@@ -227,4 +367,6 @@
 
 @media only screen and (min-width: 1600px) {
   .head_bg .content_head .scroll_bottom {
-    padding-top: 17%; } }
+    padding-top: 17%; }
+
+  }

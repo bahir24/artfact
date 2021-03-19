@@ -1,12 +1,3 @@
-// function animateContent(slide){
-//   if(slide.classlist.contain('active')){
-
-//   } else {
-
-//   }
-
-// }
-
 window.onload = function(){
   let firstSlide = document.querySelectorAll('.carousel-item')[0];
   let firstSlideText = firstSlide.querySelectorAll('.content_lines p');
@@ -18,11 +9,10 @@ window.onload = function(){
   contactHeaderItems.forEach(element => {
     addAnimateClass(element, 'animate__animated');
   });
-  console.log(contactHeaderItems);
-  // let oldContentBlock = slides[e.from].querySelectorAll('.content_lines p');
-
 }
-
+$('#heroSlider').on('click', function (e) {
+  $('#heroSlider').carousel('next');
+})
 
 $('#heroSlider').on('slid.bs.carousel', function (e) {
   let slides = this.querySelectorAll('.carousel-item');
@@ -35,7 +25,6 @@ $('#heroSlider').on('slid.bs.carousel', function (e) {
     activeContentBlock.forEach(element => {
       addAnimateClass(element, 'animate__fadeInLeft');
     });
-    // var animateClass =
   } else {
     oldContentBlock.forEach(element => {
       addAnimateClass(element, 'animate__fadeInLeft');
@@ -44,22 +33,30 @@ $('#heroSlider').on('slid.bs.carousel', function (e) {
       addAnimateClass(element, 'animate__fadeInRight');
     });
   }
-
-
-
-
-  console.log();
-  // content_lines
-  // do something…
 });
 
 function addAnimateClass(paragraph, animateClass){
-  // setTimeout(paragraph.classList.toggle(animateClass), 1000);
   paragraph.classList.toggle(animateClass);
-  // paragraph.classList.toggle('animated');
-  // paragraph.classList.toggle(animateClass);
-
 }
+
+
+
+
+console.log();
+// content_lines
+// do something…
+// setTimeout(paragraph.classList.toggle(animateClass), 1000);
+ // paragraph.classList.toggle('animated');
+  // paragraph.classList.toggle(animateClass);
+// function animateContent(slide){
+//   if(slide.classlist.contain('active')){
+
+//   } else {
+
+//   }
+
+// }
+
 // $('#heroSlider').on('slide.bs.carousel', function (e) {
 //   let oldContentBlock = e.relatedTarget.querySelectorAll('.content_lines p');
 //   stairsDelay(oldContentBlock);
