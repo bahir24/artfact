@@ -3,7 +3,7 @@
         max-width: 80%
     }
 
-    .contact-header p {
+    .contact-header .small_screen p {
         font-size: 1rem
     }
 
@@ -103,6 +103,9 @@
     .about .small_screen {
         width: 100%
     }
+    .copyright p{
+        white-space: pre;
+    }
 }
 
 @media only screen and (max-width:640px) {
@@ -152,17 +155,15 @@
     .content_lines .hello {
         font-size: 1rem
     }
-
     .small_screen {
         padding: 20px 10px;
-        text-align: center
     }
 
     section .section_header {
         margin-bottom: 45px
     }
 
-    section .section_header h2::before {
+    /* section .section_header h2::before {
         margin-top: 11px;
         width: 25%
     }
@@ -170,7 +171,7 @@
     section .section_header h2::after {
         margin-top: 11px;
         width: 25%
-    }
+    } */
 
     section .section_header h2 {
         font-size: 2rem
@@ -276,6 +277,12 @@
         padding: 50px 0 25px 0
     }
 }
+@media only screen and (max-width:575px) {
+    .small_screen {
+        text-align: center
+    }
+
+}
 
 @media only screen and (max-width:480px) {
     .portfolio_filter ul li {
@@ -283,7 +290,7 @@
         margin: 10px 0
     }
 
-    .contact_block .container h2::after,
+    /* .contact_block .container h2::after,
     .contact_block .container h2::before {
         width: 0%
     }
@@ -291,7 +298,7 @@
     .portfolio .container h2::after,
     .portfolio .container h2::before {
         width: 0%
-    }
+    } */
 }
 
 @media only screen and (min-width:480px) {
