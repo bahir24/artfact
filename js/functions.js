@@ -57,16 +57,23 @@ $(window).on( 'load', function() {
 
 	/*------------------ Scroll Menu------------------*/
 
-	$(".mnu ul li a, .slide_mnu ul li a, .scroll_bottom a, .scrollup").mPageScroll2id();
+	function scrollToSection(target){
+		event.preventDefault();
+		let topOffset = document.querySelector('#' + target).getBoundingClientRect().top;
+		window.scrollBy({
+			top: topOffset,
+			behavior: 'smooth',
+		});
+	}
 
 
 	/*------------------ Popup Window Effect------------------*/
 
-	$('.link').magnificPopup({
-        type:'image',
-        gallery:{enabled:true},
-        zoom:{enabled: true, duration: 300}
-    });
+	// $('.link').magnificPopup({
+    //     type:'image',
+    //     gallery:{enabled:true},
+    //     zoom:{enabled: true, duration: 300}
+    // });
 
 
 	/*------------------ Button to Top------------------*/

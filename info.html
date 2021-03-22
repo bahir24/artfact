@@ -39,10 +39,10 @@
                             <div class="nav_block">
                                 <div class="mnu d-none d-md-block">
                                     <ul>
-                                        <li><a href="#home">Домой</a></li>
-                                        <li><a href="#about">О компании</a></li>
-                                        <li><a href="#portfolio">Подробнее</a></li>
-                                        <li><a href="#contact">Контакты</a></li>
+                                        <li><a href="index.html">Домой</a></li>
+                                        <li><a href="index.html?section=about">О компании</a></li>
+                                        <li><a href="index.html?section=portfolio">Подробнее</a></li>
+                                        <li><a href="index.html?section=contact">Контакты</a></li>
                                         <li class="lamp"><span></span></li>
                                     </ul>
                                 </div>
@@ -51,10 +51,10 @@
                         <div class="col-12 top_mnu">
                             <div class="mnu_menu">
                                 <ul>
-                                    <li><a href="#home">Домой</a></li>
-                                    <li><a href="#about">О компании</a></li>
-                                    <li><a href="#portfolio">Подробнее</a></li>
-                                    <li><a href="#contact">Контакты</a></li>
+                                    <li><a href="index.html">Домой</a></li>
+                                    <li><a href="index.html?section=about">О компании</a></li>
+                                    <li><a href="index.html?section=portfolio">Подробнее</a></li>
+                                    <li><a href="index.html?section=contact">Контакты</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
     </header>
     <div class="blog_head_bg"></div>
 
-    <section class="blog-section blog-single-bg">
+    <section class="blog-section blog-single-bg" id="post">
         <div class="blog-wrapper">
             <div class="container">
                 <div class="row">
@@ -993,17 +993,14 @@
                                             href="#pills-comission"  role="tab" aria-controls="pills-comission"
                                             aria-selected="false">Межведомственные комиссии</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" id="pills-guion-tab" data-toggle="pill" href="#pills-guion"
-                                            role="tab" aria-controls="pills-guion" aria-selected="false">Филиалы ГУП
-                                            "ГУИОН"</a></li>
+                                            role="tab" aria-controls="pills-guion" aria-selected="false">Филиалы ГУП "ГУИОН"</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" id="pills-mchs-tab" data-toggle="pill" href="#pills-mchs"
-                                            role="tab" aria-controls="pills-mchs" aria-selected="false">Отделы надзорной
-                                            деятельности МЧС РФ</a></li>
+                                            role="tab" aria-controls="pills-mchs" aria-selected="false">Отделы надзорной деятельности МЧС РФ</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" id="pills-bti-tab" data-toggle="pill" href="#pills-bti"
                                             role="tab" aria-controls="pills-bti"
                                             aria-selected="false">Ростехинвентаризация-Федеральное БТИ</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" id="pills-mfc-tab" data-toggle="pill" href="#pills-mfc"
-                                            role="tab" aria-controls="pills-mfc" aria-selected="false">МФЦ
-                                            предоставления государственных услуг</a></li>
+                                            role="tab" aria-controls="pills-mfc" aria-selected="false">МФЦ предоставления государственных услуг</a></li>
                                     <li class="w-100">
                                         <h5 class="blog-text-uppercase py-4">Документы</h5>
                                     </li>
@@ -1042,17 +1039,18 @@
             </div>
         </div>
     </footer>
-    <a href="#home" class="scrollup"><i class="fa fa-angle-up"></i></a>
+    <a href="#" class="scrollup" onclick="scrollToSection('home')"><i class="fa fa-angle-up"></i></a>
     <script src="js/jquery/jquery.min.js"></script>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="js/magnific-popup/magnific-popup.min.js"></script>
-    <script src="js/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
     <script src="js/wow/wow.min.js"></script>
     <script src="js/isotope/isotope.pkgd.min.js"></script>
     <script src="js/countUp/jquery.countup.min.js"></script>
     <script src="js/waypoints/jquery.waypoints.min.js"></script>
+    <script src="js/smooth-polyfill/smooth-polyfill.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/send.js"></script>
+    <script src="js/info-check.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
