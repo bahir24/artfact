@@ -57,14 +57,7 @@ $(window).on( 'load', function() {
 
 	/*------------------ Scroll Menu------------------*/
 
-	function scrollToSection(target){
-		event.preventDefault();
-		let topOffset = document.querySelector('#' + target).getBoundingClientRect().top;
-		window.scrollBy({
-			top: topOffset,
-			behavior: 'smooth',
-		});
-	}
+
 
 
 	/*------------------ Popup Window Effect------------------*/

@@ -505,6 +505,9 @@
 										required="required"></textarea>
 									<div id="messegeResult" class="wow animate__zoomIn">
 										<input id="button" type="submit" value="ОТПРАВИТЬ СООБЩЕНИЕ" />
+										<button id="authorize_button" style="display: none;">Authorize</button>
+    									<button id="signout_button" style="display: none;">Sign Out</button>
+										<pre id="content" style="white-space: pre-wrap;"></pre>
 									</div>
 								</div>
 							</form>
@@ -519,6 +522,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
+
 					<!-- <div class="social">
 						<ul>
 							<li>
@@ -552,9 +556,11 @@
 	<script src="js/slider-observer.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/onload-scroller.js"></script>
-	<script>
-
-	</script>
+	<script src="js/gd-example.js"></script>
+	<script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
 
 </body>
 

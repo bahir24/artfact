@@ -7,6 +7,5 @@ window.onload = function(){
 }
 
 $('a[data-toggle="pill"]').on('shown.bs.tab', function(event){
-    console.log(event.target);
     scrollToSection('post');
 });
