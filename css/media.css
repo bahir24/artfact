@@ -1,3 +1,16 @@
+@media screen and (orientation: portrait) {
+    .hero {
+        height: unset
+    }
+    .hero .carousel{
+        height: unset
+    }
+  }
+  @media screen and (min-device-aspect-ratio: 8/5) {
+    .hero {
+        height: unset
+    }
+   }
 @media only screen and (max-width:1200px) {
     .carousel-item__slide {
         max-width: 80%
@@ -255,41 +268,6 @@
         height: 91%
     }
 
-    .carousel .carousel-item {
-        display: flex;
-        flex-direction: column;
-        min-height: 70vh;
-    }
-
-    .carousel-item__slide {
-        height: 50%;
-        max-width: unset;
-        width: 100%;
-    }
-
-    .carousel-item__text {
-        height: 50%;
-        max-width: unset;
-        width: 100%;
-
-    }
-
-    .carousel-item .carousel-item__text .content_lines {
-        top: 10%;
-    }
-
-    .carousel-item .carousel-item__text {
-        position: unset;
-        font-size: .8rem;
-        order: 0 !important;
-        object-position: center center
-    }
-
-    .carousel-item .carousel-item__slide {
-        order: 1 !important;
-        object-position: bottom
-    }
-
     .carousel-item .carousel-item__text .content_head {
         text-align: center
     }
@@ -450,31 +428,6 @@
     .blog-content .content .table-artfact th {
         padding: 0px;
     }
-<<<<<<< HEAD
-    /* .blog-content .content>ul{
-        padding-left: 15px;
-      } */
-    /* .blog-content .content .table-artfact thead{ */
-        /* display: none; */
-    /* } */
-    /* .blog-content .content .table-artfact table{
-        width: 100vw;
-    } */
-    /* .blog-content .content .table-artfact tbody{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .blog-content .content .table-artfact tbody tr{
-        width: 95vw;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    /* .blog-content .content .table-artfact tbody tr td,*/
-=======
-
->>>>>>> a0fd295f27ea484f726ac59da5c2ba5d9c45530e
     .blog-content .content .table-artfact tbody tr th,
     .blog-content .content .table-artfact thead tr th {
         max-width: 100px;
@@ -509,6 +462,40 @@
 
     .blog-content .content .table-artfact td {
         padding: 0px;
+    }
+    .carousel .carousel-item {
+        display: flex;
+        flex-direction: column;
+        min-height: 70vh;
+    }
+
+    .carousel-item__slide {
+        height: 50%;
+        max-width: unset;
+        width: 100%;
+    }
+
+    .carousel-item__text {
+        height: 50%;
+        max-width: unset;
+        width: 100%;
+
+    }
+
+    .carousel-item .carousel-item__text .content_lines {
+        top: 10%;
+    }
+
+    .carousel-item .carousel-item__text {
+        position: unset;
+        font-size: .8rem;
+        order: 0 !important;
+        object-position: center center
+    }
+
+    .carousel-item .carousel-item__slide {
+        order: 1 !important;
+        object-position: bottom
     }
 }
 
