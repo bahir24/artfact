@@ -25,7 +25,7 @@
 			<div class="sk-cube3 sk-cube"></div>
 		</div>
 	</div>
-	<section class="hero">
+	<section class="hero" id="hero">
 		<header id="home" class="head_bg">
 			<div class="overlay_color">
 				<div class="mnu_line">
@@ -39,10 +39,14 @@
 								<div class="nav_block">
 									<div class="mnu d-none d-md-block">
 										<ul>
-											<li><a href="#home">Домой</a></li>
-											<li><a href="#about">О компании</a></li>
-											<li><a href="#portfolio">Подробнее</a></li>
-											<li><a href="#contact">Контакты</a></li>
+											<li><a href="index.html">Домой</a></li>
+											<li><a href="#" onclick="window.scrollToSection('about')">О компании</a>
+											</li>
+											<li><a href="#" onclick="window.scrollToSection('portfolio')">Подробнее</a>
+											</li>
+											<li><a href="info.html">Инфо</a></li>
+											<li><a href="#" onclick="window.scrollToSection('contact')">Контакты</a>
+											</li>
 											<li class="lamp"><span></span></li>
 										</ul>
 									</div>
@@ -51,10 +55,11 @@
 							<div class="col-12 top_mnu">
 								<div class="mnu_menu">
 									<ul>
-										<li><a href="#home">Домой</a></li>
-										<li><a href="#about">О компании</a></li>
-										<li><a href="#portfolio">Подробнее</a></li>
-										<li><a href="#contact">Контакты</a></li>
+										<li><a href="index.html">Домой</a></li>
+										<li><a href="#" onclick="window.scrollToSection('about')">О компании</a></li>
+										<li><a href="#" onclick="window.scrollToSection('portfolio')">Подробнее</a></li>
+										<li><a href="info.html">Инфо</a></li>
+										<li><a href="#" onclick="window.scrollToSection('contact')">Контакты</a></li>
 									</ul>
 								</div>
 							</div>
@@ -67,68 +72,46 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="carousel-item__text">
-						<div class="content_head">
-							<div class="row">
-								<div class="col-md-12 col-sm-12 col-xs-12 py-1 py-md-0">
-									<div class="content_lines">
-										<p class="hello animate__animated h3">Создание<br />дизайн-проекта</p>
-										<p class="name animate__animated animate__delay-1s">Индивидуальный подход</p>
-										<p class="prof animate__animated animate__delay-2s">Разработка<br />необходимой
-											документации</p>
-									</div>
-								</div>
-							</div>
+						<div class="content_lines">
+							<p class="hello animate__animated h3">Создание<br />дизайн-проекта</p>
+							<p class="name animate__animated animate__delay-1s">Индивидуальный подход</p>
+							<p class="prof animate__animated animate__delay-2s">Разработка необходимой документации</p>
 						</div>
 					</div>
 					<img src="img/hres/2.jpg" class="d-block carousel-item__slide" alt="Slider image # 1">
 				</div>
 				<div class="carousel-item">
 					<div class="carousel-item__text">
-						<div class="content_head">
-							<div class="row">
-								<div class="col-md-12 col-sm-12 col-xs-12 py-1 py-md-0">
-									<div class="content_lines">
-										<p class="hello animate__animated h3">Перепланировка<br />помещений</p>
-										<p class="name animate__animated animate__delay-1s">Разработка проекта</p>
-										<p class="prof animate__animated animate__delay-2s">Согласование</p>
-									</div>
-								</div>
-							</div>
+
+						<div class="content_lines">
+							<p class="hello animate__animated h3">Перепланировка<br />помещений</p>
+							<p class="name animate__animated animate__delay-1s">Разработка проекта</p>
+							<p class="prof animate__animated animate__delay-2s">Согласование</p>
 						</div>
 					</div>
 					<img src="img/hres/6.jpg" class="d-block carousel-item__slide" alt="Slider image # 2">
 				</div>
 				<div class="carousel-item">
 					<div class="carousel-item__text">
-						<div class="content_head">
-							<div class="row">
-								<div class="col-md-12 col-sm-12 col-xs-12 py-1 py-md-0">
-									<div class="content_lines">
-										<p class="hello animate__animated h3">Ввод объектов<br />в эксплуатацию</p>
-										<p class="name animate__animated animate__delay-1s">Перевод в нежилой фонд</p>
-										<p class="prof animate__animated animate__delay-2s">Выписки ЕГРН</p>
-									</div>
-								</div>
-							</div>
+
+						<div class="content_lines">
+							<p class="hello animate__animated h3">Ввод объектов<br/> в эксплуатацию</p>
+							<p class="name animate__animated animate__delay-1s">Перевод в нежилой фонд</p>
+							<p class="prof animate__animated animate__delay-2s">Выписки ЕГРН</p>
 						</div>
 					</div>
 					<img src="img/hres/7.jpg" class="d-block carousel-item__slide" alt="Slider image # 3">
 				</div>
 				<div class="carousel-item">
 					<div class="carousel-item__text">
-						<div class="content_head">
-							<div class="row">
-								<div class="col-md-12 col-sm-12 col-xs-12 py-1 py-md-0">
-									<div class="content_lines">
-										<p class="hello animate__animated h3">Дополнительное<br />оборудование</p>
-										<p class="name animate__animated animate__delay-1s">Согласование кондиционеров
-										</p>
-										<p class="prof animate__animated animate__delay-2s">Согласование наружной
-											рекламы</p>
-									</div>
-								</div>
-							</div>
+						<div class="content_lines">
+							<p class="hello animate__animated h3">Дополнительное<br />оборудование</p>
+							<p class="name animate__animated animate__delay-1s">Согласование кондиционеров
+							</p>
+							<p class="prof animate__animated animate__delay-2s">Согласование наружной
+								рекламы</p>
 						</div>
+
 					</div>
 					<img src="img/hres/8.jpg" class="d-block carousel-item__slide" alt="Slider image # 4">
 				</div>
@@ -163,14 +146,14 @@
 				<div class="section_header wow animate__zoomIn w-100" data-wow-delay="0.3s">
 					<h2>О компании</h2>
 				</div>
-				<div class="col-md-12 col-lg-4 mb-md-3 small_screen wow animate__fadeInUp" data-wow-delay="0.2s">
+				<div class="col-md-12 col-lg-4 mb-md-3 small_screen wow animate__fadeInUp" data-wow-delay="0.1s">
 					<p class="text-left">«АртеФакт» - это коллектив профессионалов с многолетним опытом работы, которые
 						объединили свои усилия и создали поистине уникальную компанию. Нам под силу оперативно и
 						максимально качественно решить все вопросы касательно перепланировки. Основными принципами нашей
 						работы являются индивидуальный подход, своевременное выполнение взятых на себя обязательств и
 						лояльная ценовая политика.</p>
 				</div>
-				<div class="col-md-12 col-lg-4 mb-md-3 small_screen wow animate__fadeInUp" data-wow-delay="0.4s">
+				<div class="col-md-12 col-lg-4 mb-md-3 small_screen wow animate__fadeInUp" data-wow-delay="0.1s">
 					<p class="text-left">Мы предоставляем полный комплекс услуг, начиная от разработки проекта
 						перепланировки и согласования во всех инстанциях и заканчивая вводом объектов в эксплуатацию с
 						получением новых кадастровых паспортов. Мы оказываем услуги по согласованию перепланировки как
@@ -178,7 +161,7 @@
 						компанию, вы можете быть уверенны, что все услуги будут проведены на высоком уровне и
 						соответствовать требованиям действующих норм.</p>
 				</div>
-				<div class="col-md-12 col-lg-4 mb-md-3 small_screen wow animate__fadeInUp" data-wow-delay="0.6s">
+				<div class="col-md-12 col-lg-4 mb-md-3 small_screen wow animate__fadeInUp" data-wow-delay="0.1s">
 					<p class="text-left">С 2012 г. – Членство в Некоммерческом партнерстве проектировщиков
 						«МежРегионПроект». Свидетельство СРО № МРП-0252- 2012-7810870340-02 С 2014г. - Членство в
 						Ассоциации Саморегулируемой организации «МежРегионПроект». Свидетельство СРО №
@@ -186,34 +169,30 @@
 				</div>
 			</div>
 			<div class="row about_block">
-				<div class="col-lg-3 wow animate__fadeInUp mb-lg-0 mb-5 p-0" data-wow-delay="0.2s">
+				<div class="col-lg-3 wow animate__fadeInUp mb-lg-0 mb-5 p-0" data-wow-delay="0.1s">
 					<div class="about_block_border text-center h-100">
 						<i class="fa fa-briefcase" aria-hidden="true"></i>
-						<!-- <img src="img/icon1.png" alt=""> -->
 						<h4>Согласование</h4>
 						<p>Работа с государственными учреждениями</p>
 					</div>
 				</div>
-				<div class="col-lg-3 wow animate__fadeInUp mb-lg-0 mb-5 p-0" data-wow-delay="0.4s">
+				<div class="col-lg-3 wow animate__fadeInUp mb-lg-0 mb-5 p-0" data-wow-delay="0.2s">
 					<div class="about_block_border text-center h-100">
 						<i class="fa fa-file-text" aria-hidden="true"></i>
-						<!-- <img src="img/icon2.png" alt=""> -->
 						<h4>Проектирование</h4>
 						<p>Разработка проектной документации</p>
 					</div>
 				</div>
-				<div class="col-lg-3 wow animate__fadeInUp mb-lg-0 mb-5 p-0" data-wow-delay="0.6s">
+				<div class="col-lg-3 wow animate__fadeInUp mb-lg-0 mb-5 p-0" data-wow-delay="0.3s">
 					<div class="about_block_border text-center h-100">
 						<i class="fa fa-building" aria-hidden="true"></i>
-						<!-- <img src="img/icon3.png" alt=""> -->
 						<h4>Перевод в нежилой фонд</h4>
 						<p>Смена функционального назначения помещения</p>
 					</div>
 				</div>
-				<div class="col-lg-3 wow animate__fadeInUp mb-lg-0 mb-5 p-0" data-wow-delay="0.8s">
+				<div class="col-lg-3 wow animate__fadeInUp mb-lg-0 mb-5 p-0" data-wow-delay="0.4s">
 					<div class="about_block_border text-center h-100">
 						<i class="fa fa-thermometer-empty" aria-hidden="true"></i>
-						<!-- <img src="img/icon4.png" alt=""> -->
 						<h4>Кондиционеры</h4>
 						<p>Согласование размещения кондиционеров</p>
 					</div>
@@ -223,7 +202,7 @@
 	</section>
 	<section id="counter">
 		<div class="container">
-				<h2 class="invisible-header">О компании</h2>
+			<h2 class="invisible-header">О компании</h2>
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
 					<span class="counter">76</span>
@@ -262,9 +241,8 @@
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="isotope_items row card-columns">
-						<a href="img/portfolio/work-1.jpg"
-							class="single_item link services col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=design"
+							class="single_item services col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.2s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/design.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -275,9 +253,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-2.jpg"
-							class="single_item link guide col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.5s">
+						<a href="info.html?info=comission"
+							class="single_item guide col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.4s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/comission.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -285,9 +262,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-3.jpg"
-							class="single_item link services col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.7s">
+						<a href="info.html?info=project"
+							class="single_item services col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.6s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/project.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -300,9 +276,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-4.jpg"
-							class="single_item link guide col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=guion"
+							class="single_item guide col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.2s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/guion.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -310,9 +285,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-5.jpg"
-							class="single_item link guide col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=mchs" class="single_item guide col-md-4 col-sm-6 wow animate__slideInUp"
+							data-wow-delay="0.2s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/mchs.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -320,9 +294,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-6.jpg"
-							class="single_item link services col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=approval"
+							class="single_item services col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.2s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/approval.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -333,11 +306,14 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-7.jpg"
-							class="single_item link services col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=usage"
+							class="single_item services col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.1s">
 							<div class="card">
+<<<<<<< HEAD
 								<img class="card-img-top" src="img/info/transfer.jpg" alt="Card image cap">
+=======
+								<img class="card-img-top" src="img/info/usage.jpg" alt="Card image cap">
+>>>>>>> a0fd295f27ea484f726ac59da5c2ba5d9c45530e
 								<div class="card-body">
 									<h5 class="card-title">Ввод объектов в эксплуатацию</h5>
 									<p class="card-text">После того как были проведены строительно-монтажные работы,
@@ -347,8 +323,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-7.jpg"
-							class="single_item link docs col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.3s">
+						<a href="info.html?info=sro1" class="single_item docs col-md-4 col-sm-6 wow animate__slideInUp"
+							data-wow-delay="0.1s">
 							<div class="card">
 								<div class="card-body">
 									<h5 class="card-title">Свидетельство СРО</h5>
@@ -356,9 +332,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-5.jpg"
-							class="single_item link guide col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=bti" class="single_item guide col-md-4 col-sm-6 wow animate__slideInUp"
+							data-wow-delay="0.1s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/bti.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -366,11 +341,14 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-7.jpg"
-							class="single_item link services col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=transfer"
+							class="single_item services col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.1s">
 							<div class="card">
+<<<<<<< HEAD
 								<img class="card-img-top" src="img/info/usage.jpg" alt="Card image cap">
+=======
+								<img class="card-img-top" src="img/info/transfer.jpg" alt="Card image cap">
+>>>>>>> a0fd295f27ea484f726ac59da5c2ba5d9c45530e
 								<div class="card-body">
 									<h5 class="card-title">Перевод в нежилой (жилой) фонд</h5>
 									<p class="card-text">Под переводом в нежилой или жилой фонд подразумевается смена
@@ -379,9 +357,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-7.jpg"
-							class="single_item link guide col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=mfc" class="single_item guide col-md-4 col-sm-6 wow animate__slideInUp"
+							data-wow-delay="0.1s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/mfc.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -389,9 +366,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-7.jpg"
-							class="single_item link services col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=extract"
+							class="single_item services col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.1s">
 							<div class="card">
 								<div class="card-body">
 									<h5 class="card-title">Получение выписки из ЕГРН</h5>
@@ -400,9 +376,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-7.jpg"
-							class="single_item link services col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=conditioner"
+							class="single_item services col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.1s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/conditioner.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -412,9 +387,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-7.jpg"
-							class="single_item link services col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=equipment"
+							class="single_item services col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.1s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/equipment.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -425,18 +399,8 @@
 								</div>
 							</div>
 						</a>
-						<a href="img/portfolio/work-7.jpg"
-							class="single_item link docs col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.3s">
-							<div class="card">
-								<div class="card-body">
-									<h5 class="card-title">Свидетельство СРО</h5>
-									<p class="card-text">№ МРП-0252-2012-7810870340-03</p>
-								</div>
-							</div>
-						</a>
-						<a href="img/portfolio/work-7.jpg"
-							class="single_item link services col-md-4 col-sm-6 wow animate__slideInUp"
-							data-wow-delay="0.3s">
+						<a href="info.html?info=adv"
+							class="single_item services col-md-4 col-sm-6 wow animate__slideInUp" data-wow-delay="0.1s">
 							<div class="card">
 								<img class="card-img-top" src="img/info/adv.jpg" alt="Card image cap">
 								<div class="card-body">
@@ -465,9 +429,11 @@
 								<div class="contact_block_border text-center mx-0 mx-lg-3">
 									<i class="fa fa-phone" aria-hidden="true"></i>
 									<h4>ТЕЛЕФОН</h4>
-									<p><a class="contact_block__phone-link" href="tel:+79219410594">+7(921) 94-105-94</a>
+									<p><a class="contact_block__phone-link" href="tel:+79219410594">+7(921)
+											94-105-94</a>
 									</p>
-									<p><a class="contact_block__phone-link" href="tel:+78127126570">+7(812) 712-65-70</a>
+									<p><a class="contact_block__phone-link" href="tel:+78127126570">+7(812)
+											712-65-70</a>
 									</p>
 									<p class="text-white">text</p>
 								</div>
@@ -505,7 +471,7 @@
 								</fieldset>
 								<fieldset class="wow animate__zoomIn padding_l">
 									<input id="email" name="email" type="text" placeholder="E-mail" required="required"
-									value="" />
+										value="" />
 								</fieldset>
 								<div class="textarea_block wow animate__zoomIn">
 									<textarea id="message" name="message" rows="5" placeholder="Сообщение..."
@@ -526,6 +492,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
+
 					<!-- <div class="social">
 						<ul>
 							<li>
@@ -540,25 +507,26 @@
 						</ul>
 					</div> -->
 					<div class="copyright">
-						<p>Copyright &copy; АртеФакт 2021.
-Все права защищены</p>
+						<p>Copyright &copy; АртеФакт 2021.<wbr> Все права защищены</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<a href="#home" class="scrollup"><i class="fa fa-angle-up"></i></a>
+	<a href="#" class="scrollup" onclick="scrollToSection('hero')"><i class="fa fa-angle-up"></i></a>
 	<script src="js/jquery/jquery.min.js"></script>
 	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-	<script src="js/magnific-popup/magnific-popup.min.js"></script>
-	<script src="js/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
 	<script src="js/wow/wow.min.js"></script>
 	<script src="js/isotope/isotope.pkgd.min.js"></script>
 	<script src="js/countUp/jquery.countup.min.js"></script>
 	<script src="js/waypoints/jquery.waypoints.min.js"></script>
+	<script src="js/smooth-polyfill/smooth-polyfill.js"></script>
 	<script src="js/functions.js"></script>
 	<script src="js/send.js"></script>
 	<script src="js/slider-observer.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/onload-scroller.js"></script>
+
 </body>
 
 </html>
