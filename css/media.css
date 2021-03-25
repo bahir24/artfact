@@ -448,6 +448,12 @@
         margin-top: .5rem;
         margin-bottom: 1rem;
     }
+    .carousel-item .carousel-item__text {
+        max-width: 50%;
+    }
+    .carousel-item .carousel-item__slide {
+        max-width: 50%;
+    }
 }
 
 @media only screen and (max-width:480px) {
