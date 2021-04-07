@@ -84,12 +84,36 @@ section {
 }
 
 body {
+  position: relative;
   font-size: 16px;
   min-width: 320px;
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   color: #414e56;
+}
+
+.header-hidden{
+  transform: translateY(-100%);
+  transition: transform .8s;
+}
+
+.header-show{
+  transform: translateY(0);
+  transition: transform .8s;
+}
+
+.head_bg .container{
+  background: #ffffff;
+}
+
+.hero header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 h1,
@@ -158,14 +182,6 @@ section {
   width: 100vw;
 }
 
-.hero header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  /* min-height: 9vh; */
-}
 
 .hero .carousel {
   overflow: hidden;
@@ -270,7 +286,7 @@ section {
   position: absolute;
   bottom: 0;
   width: 100%;
-  z-index: 300;
+  z-index: 20;
   overflow: hidden;
   height: 14%;
 }
@@ -478,7 +494,7 @@ section .section_header h2::after {
 
 .head_bg .mnu_line .row,
 .blog_head_bg .mnu_line .row {
-  border-bottom: 1px solid #00a7e2;
+  border: 1px solid #00a7e2;
 }
 
 .head_bg .mnu_line .row .col-sm-10,
@@ -637,10 +653,11 @@ section .section_header h2::after {
 /* Header ------------------------------*/
 
 .head_bg {
-  position: relative;
+  width: 100%;
+  /* position: relative;
   color: #000;
   overflow: hidden;
-  z-index: 11;
+  z-index: 11; */
 }
 
 .head_bg .content_head {
