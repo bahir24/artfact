@@ -153,17 +153,23 @@ section {
 }
 
 .hero {
+  position: relative;
   height: 100vh;
   width: 100vw;
 }
 
 .hero header {
-  min-height: 9vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  /* min-height: 9vh; */
 }
 
 .hero .carousel {
   overflow: hidden;
-  height: 77vh;
+  height: 100%;
 }
 
 .carousel .carousel-inner {
@@ -173,8 +179,8 @@ section {
 .carousel .carousel-item {
   transition: opacity .5s ease-out .5s;
   opacity: 0;
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   height: 100%;
 }
 
@@ -186,19 +192,22 @@ section {
 }
 
 .carousel-item__slide {
-  height: 100%;
-  object-fit: contain;
-  display: flex;
+  object-position: center center;
+    width: 100%;
+    height: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  /* display: flex; */
 }
 
 .carousel-item__text {
   position: relative;
-  display: flex;
+  /* display: flex; */
   flex: 1;
   align-items: center;
 }
 
-.carousel-item:nth-child(even) .carousel-item__slide,
+/* .carousel-item:nth-child(even) .carousel-item__slide,
 .carousel-item:nth-child(odd) .carousel-item__text {
   order: 1;
 }
@@ -214,7 +223,7 @@ section {
 
 .carousel-item:nth-child(odd) .carousel-item__slide {
   object-position: bottom left;
-}
+} */
 
 .carousel-item .carousel-item__text {
   justify-content: center;
@@ -258,6 +267,10 @@ section {
 }
 
 .contact-header {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 300;
   overflow: hidden;
   height: 14%;
 }

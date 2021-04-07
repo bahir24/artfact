@@ -1,20 +1,20 @@
-@media screen and (orientation: portrait) {
+/* @media screen and (orientation: portrait) {
     .hero {
         height: unset
     }
     .hero .carousel{
         height: unset
     }
-  }
-  @media screen and (min-device-aspect-ratio: 8/5) {
+  } */
+  /* @media screen and (min-device-aspect-ratio: 8/5) {
     .hero {
         height: unset
     }
-   }
+   } */
 @media only screen and (max-width:1200px) {
-    .carousel-item__slide {
+    /* .carousel-item__slide {
         max-width: 80%
-    }
+    } */
 
     .contact-header .small_screen p {
         font-size: 1rem
@@ -48,9 +48,9 @@
 }
 
 @media only screen and (max-width:1024px) {
-    .carousel-item__slide {
+    /* .carousel-item__slide {
         max-width: 75%
-    }
+    } */
 
     #counter span {
         font-size: 2.5rem;
@@ -139,13 +139,13 @@
 }
 
 @media only screen and (max-width:992px) {
-    .hero {
+    /* .hero {
         height: unset
-    }
+    } */
 
-    .carousel-item__slide {
+    /* .carousel-item__slide {
         max-width: 70%
-    }
+    } */
 }
 
 @media only screen and (max-width:767px) {
@@ -264,9 +264,9 @@
 }
 
 @media only screen and (max-width:640px) {
-    .hero .carousel {
+    /* .hero .carousel {
         height: 91%
-    }
+    } */
 
     .carousel-item .carousel-item__text .content_head {
         text-align: center
@@ -451,9 +451,9 @@
     .carousel-item .carousel-item__text {
         max-width: 50%;
     }
-    .carousel-item .carousel-item__slide {
+    /* .carousel-item .carousel-item__slide {
         max-width: 50%;
-    }
+    } */
 }
 
 @media only screen and (max-width:480px) {
@@ -469,17 +469,17 @@
     .blog-content .content .table-artfact td {
         padding: 0px;
     }
-    .carousel .carousel-item {
+    /* .carousel .carousel-item {
         display: flex;
         flex-direction: column;
         min-height: 70vh;
-    }
+    } */
 
-    .carousel-item__slide {
+    /* .carousel-item__slide {
         height: 50%;
         max-width: unset;
         width: 100%;
-    }
+    } */
 
     .carousel-item__text {
         height: 50%;
