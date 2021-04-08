@@ -288,7 +288,6 @@ section {
   width: 100%;
   z-index: 20;
   overflow: hidden;
-  height: 14%;
 }
 
 .contact-header .small_screen p {
@@ -299,7 +298,9 @@ section {
 .contact-header .small_screen {
   padding: 0;
 }
-
+.contact-header .small_screen p{
+  text-align: center;
+}
 .contact-header .small_screen span {
   color: #828183;
   font-size: 1rem;

@@ -1,11 +1,14 @@
-/* @media screen and (orientation: portrait) {
-    .hero {
+@media screen and (orientation: portrait) {
+    /* .contact-header>.container>.section_padding>.small_screen:last-child {
+        display: none;
+    } */
+    /* .hero { */
+        /* height: unset */
+    /* } */
+    /* .hero .carousel{
         height: unset
-    }
-    .hero .carousel{
-        height: unset
-    }
-  } */
+    } */
+  }
   /* @media screen and (min-device-aspect-ratio: 8/5) {
     .hero {
         height: unset
@@ -75,6 +78,13 @@
 }
 
 @media only screen and (max-width:991px) {
+    .contact-header .small_screen p {
+        font-size: .8rem;
+    }
+    .contact-header>.container>.section_padding {
+        padding: 5px;
+    }
+
     .nav_block a {
         font-size: 10px !important
     }
