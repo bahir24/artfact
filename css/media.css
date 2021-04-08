@@ -1,24 +1,6 @@
-@media screen and (orientation: portrait) {
-    /* .contact-header>.container>.section_padding>.small_screen:last-child {
-        display: none;
-    } */
-    /* .hero { */
-        /* height: unset */
-    /* } */
-    /* .hero .carousel{
-        height: unset
-    } */
-  }
-  /* @media screen and (min-device-aspect-ratio: 8/5) {
-    .hero {
-        height: unset
-    }
-   } */
+/* @media screen and (orientation: portrait) {
+  } */
 @media only screen and (max-width:1200px) {
-    /* .carousel-item__slide {
-        max-width: 80%
-    } */
-
     .contact-header .small_screen p {
         font-size: 1rem
     }
@@ -51,10 +33,6 @@
 }
 
 @media only screen and (max-width:1024px) {
-    /* .carousel-item__slide {
-        max-width: 75%
-    } */
-
     #counter span {
         font-size: 2.5rem;
         font-weight: 700
@@ -148,26 +126,16 @@
     }
 }
 
-@media only screen and (max-width:992px) {
-    /* .hero {
-        height: unset
-    } */
-
-    /* .carousel-item__slide {
-        max-width: 70%
-    } */
-}
-
 @media only screen and (max-width:767px) {
     .toggle-mnu {
         right: 22px;
-        top: 3px
+        top: 3px;
     }
 
     .toggle-mnu span,
     .toggle-mnu span::after,
     .toggle-mnu span::before {
-        background-color: #000;
+        background-color: #00a7e2;
         height: 3px
     }
 
@@ -274,10 +242,6 @@
 }
 
 @media only screen and (max-width:640px) {
-    /* .hero .carousel {
-        height: 91%
-    } */
-
     .carousel-item .carousel-item__text .content_head {
         text-align: center
     }
