@@ -178,15 +178,15 @@ section {
 
 .hero {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 }
 
 
-.hero .carousel {
+/* .hero .carousel {
   overflow: hidden;
   height: 100%;
-}
+} */
 
 .carousel .carousel-inner {
   height: 100%;
@@ -260,11 +260,11 @@ section {
 }
 
 .contact-header {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   width: 100%;
-  z-index: 20;
-  overflow: hidden;
+  /* z-index: 20; */
+  /* overflow: hidden; */
 }
 
 .contact-header .small_screen p {
