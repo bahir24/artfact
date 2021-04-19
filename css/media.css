@@ -1,4 +1,6 @@
 /* @media screen and (orientation: portrait) {
+
+
   } */
 @media only screen and (max-width:1200px) {
     .contact-header .small_screen p {
@@ -59,8 +61,19 @@
     .contact-header .small_screen p {
         font-size: .8rem;
     }
+
     .contact-header>.container>.section_padding {
         padding: 5px;
+    }
+
+    .main-head{
+        top: 1%;
+    }
+    .main-head .main-word {
+        font-size: 3rem;
+    }
+    .main-head__hint{
+        font-size: .8rem;
     }
 
     .nav_block a {
@@ -390,6 +403,9 @@
 @media only screen and (max-width:575px) {
     .small_screen {
         text-align: center
+    }
+    .main-head .main-word {
+        font-size: 2.5rem
     }
 
     footer .container .copyright p {
