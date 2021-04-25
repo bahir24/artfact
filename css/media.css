@@ -58,6 +58,9 @@
 }
 
 @media only screen and (max-width:991px) {
+    .hero {
+        height: unset;
+    }
     .contact-header .small_screen p {
         font-size: .8rem;
     }

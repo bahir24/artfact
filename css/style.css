@@ -195,7 +195,7 @@ section {
 
 .btn-call:hover{
   color: white;
-  background-color: #0478a0;
+  background-color: #028fbf;
 }
 
 /* .btn-whatsapp{
@@ -749,8 +749,8 @@ section .section_header h2::after {
   left: 50%;
   transform: translateX(-50%);
   background: white;
-  border-radius: 8px;
-  padding: 0 10px;
+  border-radius: 18px;
+  padding: 10px 10px;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
   height: 45px;
