@@ -738,6 +738,11 @@ section .section_header h2::after {
   font-size: 1rem;
 }
 
+.about_block .about_block_border p span{
+  font-weight: bold;
+  color: var(--artfact);
+}
+
 .about_block p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
