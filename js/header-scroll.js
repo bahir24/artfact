@@ -18,4 +18,8 @@ window.addEventListener('scroll', function () {
         headerSticky.classList.add('header-hidden');
         lastScroll = bodyOffset;
     }
+    if(bodyOffset = 0){
+        headerSticky.classList.remove('header-hidden');
+        headerSticky.classList.add('header-show');
+    }
 });
