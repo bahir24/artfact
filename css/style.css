@@ -182,7 +182,7 @@ section {
 .main-head__hint{
   color: #414e56;
   font-weight: 300;
-  text-shadow: 1px 1px 1px #55575a;
+  /* text-shadow: 1px 1px 1px #55575a; */
   background-color: white;
   display: inline;
   /* text-shadow: 1px 1px 1px var(--artfact); */
