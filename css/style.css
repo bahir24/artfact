@@ -734,6 +734,9 @@ section .section_header h2::after {
 .about_block .about_block_border h4 {
   color: #00a7e2;
 }
+.about_block .about_block_border p {
+  font-size: 1rem;
+}
 
 .about_block p {
   font-family: 'Roboto', sans-serif;
