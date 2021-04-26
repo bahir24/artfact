@@ -5,7 +5,7 @@ var headerSticky = document.querySelector('header');
 var headerHeight = headerSticky.offsetHeight;
 window.addEventListener('scroll', function () {
     var bodyOffset = document.querySelector('body').getBoundingClientRect().top;
-    if (bodyOffset > lastScroll) {
+    if (bodyOffset > lastScroll || bodyOffset > -2) {
         scrollDown = 0;
         scrollUp += bodyOffset - lastScroll;
         headerSticky.classList.remove('header-hidden');
@@ -18,8 +18,5 @@ window.addEventListener('scroll', function () {
         headerSticky.classList.add('header-hidden');
         lastScroll = bodyOffset;
     }
-    if(bodyOffset = 0){
-        headerSticky.classList.remove('header-hidden');
-        headerSticky.classList.add('header-show');
-    }
+
 });
