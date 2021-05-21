@@ -140,6 +140,9 @@
         font-size: 1rem;
         font-weight: 300;
     }
+    .portfolio_filter ul li{
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width:767px) {
@@ -254,6 +257,9 @@
         font-size: 0.8rem;
         font-weight: 300;
 
+    }
+    .portfolio_filter ul li{
+        padding: 5px 10px;
     }
 }
 
@@ -447,6 +453,9 @@
     /* .carousel-item .carousel-item__slide {
         max-width: 50%;
     } */
+    .portfolio_filter ul li{
+        font-size: 0.8rem;
+    }
 }
 
 @media only screen and (max-width:480px) {
@@ -461,6 +470,9 @@
 
     .blog-content .content .table-artfact td {
         padding: 0px;
+    }
+    .portfolio_filter ul li{
+        font-size: 1.5rem;
     }
     /* .carousel .carousel-item {
         display: flex;
