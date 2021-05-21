@@ -779,6 +779,11 @@ section .section_header h2::after {
   padding-bottom: 30px;
 }
 
+#about h3{
+  color: var(--artfact);
+}
+
+
 /* counter -------------------------------*/
 #counter {
   padding: 40px 0 50px 0;
@@ -1321,7 +1326,7 @@ footer .social ul li a i:hover {
   overflow: hidden;
   z-index: 11;
   height: 400px;
-  background: center center/cover url('../img/logo-header.png') no-repeat;
+  background: top center/cover url('../img/hero/5.jpg') no-repeat;
 }
 
 .blog_head_bg .content_head {
