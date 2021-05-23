@@ -1334,13 +1334,14 @@ footer .social ul li a i:hover {
 
 /* Go to top ------------------------------------*/
 .scrollup {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   position: fixed;
   bottom: 30px;
   right: 30px;
   display: none;
   background: #00a7e2;
+  border: 1px solid white;
   -webkit-border-radius: 30px;
   /* Safari & Chrome */
   -moz-border-radius: 30px;
@@ -1360,8 +1361,8 @@ footer .social ul li a i:hover {
   color: #fff;
   text-align: center;
   display: block;
-  line-height: 28px;
-  font-size: 20px;
+  line-height: 45px;
+  font-size: 40px;
 }
 
 /* BLOG PAGE */
