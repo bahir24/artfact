@@ -261,6 +261,17 @@
     .portfolio_filter ul li{
         padding: 5px 10px;
     }
+    .single_item img{
+        max-height: 120px;
+        object-fit: cover;
+        object-position: top;
+
+    }
+    .portfolio .card-title{
+        font-size: 1rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:640px) {

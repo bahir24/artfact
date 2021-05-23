@@ -31,7 +31,7 @@
             <div class="mnu_line">
                 <div class="container">
                     <div class="row text-center">
-                        <div class="col-md-3 p-md-0">
+                        <div class="col-md-3">
                             <a href="#" class="toggle-mnu"><span></span></a>
                             <h1 class="logo_img">Логотип компании «АртеФакт»<a href="index.html"></a></h1>
                         </div>
@@ -40,9 +40,13 @@
                                 <div class="mnu d-none d-md-block">
                                     <ul>
                                         <li><a href="index.html">Домой</a></li>
-                                        <li><a href="index.html?section=about">О компании</a></li>
-                                        <li><a href="index.html?section=portfolio">Подробнее</a></li>
-                                        <li><a href="index.html?section=contact">Контакты</a></li>
+                                        <li><a href="#" onclick="window.scrollToSection('about')">О компании</a>
+                                        </li>
+                                        <li><a href="#" onclick="window.scrollToSection('portfolio')">Подробнее</a>
+                                        </li>
+                                        <li><a href="info.html">Инфо</a></li>
+                                        <li><a href="#" onclick="window.scrollToSection('contact')">Контакты</a>
+                                        </li>
                                         <li class="lamp"><span></span></li>
                                     </ul>
                                 </div>
@@ -52,9 +56,10 @@
                             <div class="mnu_menu">
                                 <ul>
                                     <li><a href="index.html">Домой</a></li>
-                                    <li><a href="index.html?section=about">О компании</a></li>
-                                    <li><a href="index.html?section=portfolio">Подробнее</a></li>
-                                    <li><a href="index.html?section=contact">Контакты</a></li>
+                                    <li><a href="#" onclick="window.scrollToSection('about')">О компании</a></li>
+                                    <li><a href="#" onclick="window.scrollToSection('portfolio')">Подробнее</a></li>
+                                    <li><a href="info.html">Инфо</a></li>
+                                    <li><a href="#" onclick="window.scrollToSection('contact')">Контакты</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -74,7 +79,7 @@
                             <div class="tab-pane fade show active" id="pills-design" role="tabpanel"
                                 aria-labelledby="pills-design-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3 mb-md-3">
-                                    <img src="img/info/design.jpg" alt="">
+                                    <img src="img/info/design.jpg" alt="design project">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Дизайн-проекты</h2>
@@ -117,7 +122,7 @@
                             <div class="tab-pane fade" id="pills-project" role="tabpanel"
                                 aria-labelledby="pills-project-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3 mb-md-3">
-                                    <img src="img/info/project.jpg" alt="">
+                                    <img src="img/info/project.jpg" alt="replan project">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Разработка проекта перепланировки</h2>
@@ -157,7 +162,7 @@
                             <div class="tab-pane fade" id="pills-approval" role="tabpanel"
                                 aria-labelledby="pills-approval-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3">
-                                    <img src="img/info/approval.jpg" alt="">
+                                    <img src="img/info/approval.jpg" alt="approval">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Согласование перепланировки</h2>
@@ -236,7 +241,7 @@
                             <div class="tab-pane fade" id="pills-usage" role="tabpanel"
                                 aria-labelledby="pills-usage-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3">
-                                    <img src="img/info/usage.jpg" alt="">
+                                    <img src="img/info/usage.jpg" alt="object usage">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Ввод объектов в эксплуатацию</h2>
@@ -269,7 +274,7 @@
                             <div class="tab-pane fade" id="pills-transfer" role="tabpanel"
                                 aria-labelledby="pills-transfer-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3">
-                                    <img src="img/info/transfer.jpg" alt="">
+                                    <img src="img/info/transfer.jpg" alt="transfer object">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Перевод в нежилой (жилой) фонд</h2>
@@ -300,6 +305,7 @@
                             <div class="tab-pane fade" id="pills-extract" role="tabpanel"
                                 aria-labelledby="pills-extract-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3">
+                                    <img src="img/info/egrn.jpg" alt="egrn reference">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Получение выписки из ЕГРН</h2>
@@ -324,7 +330,7 @@
                             <div class="tab-pane fade" id="pills-conditioner" role="tabpanel"
                                 aria-labelledby="pills-conditioner-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3">
-                                    <img src="img/info/conditioner.jpg" alt="">
+                                    <img src="img/info/conditioner.jpg" alt="conditioner">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Согласование размещения кондиционера</h2>
@@ -371,7 +377,7 @@
                             <div class="tab-pane fade" id="pills-equipment" role="tabpanel"
                                 aria-labelledby="pills-equipment-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3">
-                                    <img src="img/info/equipment.jpg" alt="">
+                                    <img src="img/info/equipment.jpg" alt="additional equipment">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Согласование дополнительного оборудования</h2>
@@ -397,7 +403,7 @@
                             <div class="tab-pane fade" id="pills-comission" role="tabpanel"
                                 aria-labelledby="pills-comission-tab">
                                 <div class="blog-img-frame">
-                                    <img src="img/info/comission.jpg" alt="">
+                                    <img src="img/info/comission.jpg" alt="comission">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Межведомственные комиссии</h2>
@@ -498,7 +504,7 @@
                             <div class="tab-pane fade" id="pills-guion" role="tabpanel"
                                 aria-labelledby="pills-guion-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3">
-                                    <img src="img/info/guion.jpg" alt="">
+                                    <img src="img/info/guion.jpg" alt="City Office of Real Estate Inventory and Valuation">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Филиалы ГУП "ГУИОН"</h2>
@@ -627,7 +633,7 @@
                             </div>
                             <div class="tab-pane fade" id="pills-mchs" role="tabpanel" aria-labelledby="pills-mchs-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3">
-                                    <img src="img/info/mchs.jpg" alt="">
+                                    <img src="img/info/mchs.jpg" alt="Ministry of Emergency Situations">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Отделы надзорной деятельности МЧС РФ</h2>
@@ -752,7 +758,7 @@
                             </div>
                             <div class="tab-pane fade" id="pills-bti" role="tabpanel" aria-labelledby="pills-bti-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3">
-                                    <img src="img/info/bti.jpg" alt="">
+                                    <img src="img/info/bti.jpg" alt="Rostekhinventarizatsiya – Federal BTI">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Ростехинвентаризация-Федеральное БТИ</h2>
@@ -771,7 +777,7 @@
                             </div>
                             <div class="tab-pane fade" id="pills-mfc" role="tabpanel" aria-labelledby="pills-mfc-tab">
                                 <div class="blog-img-frame mb-5 mb-md-3">
-                                    <img src="img/info/mfc.jpg" alt="">
+                                    <img src="img/info/mfc.jpg" alt="Multifunctional center for the provision of public services">
                                 </div>
                                 <div class="blog-post-head px-4">
                                     <h2>Многофункциональный центр предоставления государственных услуг</h2>
@@ -1055,6 +1061,7 @@
     <script src="js/send.js"></script>
     <script src="js/info-check.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/header-scroll.js"></script>
 </body>
 
 </html>
