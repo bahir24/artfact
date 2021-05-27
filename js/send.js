@@ -1,42 +1,46 @@
-"use strict";
-$(document).on( 'ready', function() {
-    $("#ajaxform").submit(function(){
-        var form = $(this);
-        var error = false;
-        form.find('input, textarea').each( function(){
-            if ($(this).val() == '') {
-                alert('Fill in the field "'+$(this).attr('placeholder')+'"!');
-                error = true;
-            }
-        });
-        if (!error) {
-            var data = form.serialize();
-            $.ajax({
-               type: 'GET',
-               url: "https://sheets.googleapis.com/v4/spreadsheets/AKfycbyo_pBoxzFx4IFh-HuGrMvTIAZwP4wALFX1aqemIiVCh7R8jOtGGNRu1P-yLcoQ6iV3-A/?key=",
-               dataType: 'jsonp',
-               data: data,
-               beforeSend: function(data) {
-                    form.find('input[type="submit"]').attr('disabled', 'disabled');
-                  },
-               success: function(data){
-                    if (data['error']) {
-                        alert(data['error']);
-                    } else {
-                        $('#ajaxform')[0].reset();
-                        alert('The message was successfully sent');
-                    }
-                 },
-               error: function (xhr, ajaxOptions, thrownError) {
-                    alert(xhr.status);
-                    alert(thrownError);
-                 },
-               complete: function(data) {
-                    form.find('input[type="submit"]').prop('disabled', false);
-                 }
+const form = document.forms.ajaxform;
+const sendButton = document.querySelector('.button');
 
-                 });
-        }
-        return false;
-    });
+sendButton.addEventListener('click', function (event) {
+  event.preventDefault();
+  form.elements.email.nextElementSibling.textContent = '';
+  form.elements.name.nextElementSibling.textContent = '';
+
+  if (validateForm(form)) {
+
+    var data = {
+    email: form.elements.email.value,
+    name: form.elements.name.value,
+    message: form.elements.message.value
+  };
+  const xhr = new XMLHttpRequest();
+  xhr.responseType = 'json';
+  xhr.open('POST', 'msg.php');
+  console.log('here');
+  xhr.send(JSON.stringify(data));
+    form.elements.email.value = '';
+    form.elements.name.value = '';
+    form.elements.message.value = '';
+  };
+
 });
+
+function validateForm(formData) {
+  let valid = true;
+  const regEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (!regEmail.test(formData.elements.email.value)) {
+    valid = false;
+    formData.elements.email.nextElementSibling.textContent = 'Ошибка в адресе email';
+  }
+  if (!formData.elements.email.value) {
+    valid = false;
+    formData.elements.email.nextElementSibling.textContent = 'Поле email не должно быть пустым';
+  }
+  if (!formData.elements.name.value) {
+    valid = false;
+    formData.elements.name.nextElementSibling.textContent = 'Поле имя не должно быть пустым';
+  }
+
+  return valid;
+}

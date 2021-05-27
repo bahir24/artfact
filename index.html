@@ -1301,20 +1301,23 @@ section {
 					<div class="col-md-2"></div>
 					<div class="col-md-8">
 						<div class="contact_form">
-							<form method="post" id="ajaxform">
+							<form method="post" id="ajaxform" name="ajaxform">
 								<fieldset class="wow animate__zoomIn padding_r">
 									<input id="name" name="name" type="text" placeholder="Имя" required="required"
 										value="" />
+                    <p class="valid-msg"></p>
 								</fieldset>
 								<fieldset class="wow animate__zoomIn padding_l">
 									<input id="email" name="email" type="text" placeholder="E-mail" required="required"
 										value="" />
+                    <p class="valid-msg"></p>
 								</fieldset>
 								<div class="textarea_block wow animate__zoomIn">
 									<textarea id="message" name="message" rows="5" placeholder="Сообщение..."
 										required="required"></textarea>
 									<div id="messegeResult" class="wow animate__zoomIn">
-										<input id="button" type="submit" value="ОТПРАВИТЬ СООБЩЕНИЕ" />
+										<input id="button" class="button" type="submit" value="ОТПРАВИТЬ СООБЩЕНИЕ" />
+                    <p class="valid-msg"></p>
 									</div>
 								</div>
 							</form>
