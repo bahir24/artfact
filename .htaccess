@@ -1,0 +1,17 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule ^info$ info.php [END]
+RewriteRule ^info/$ info [R=301]
+RewriteRule ^info.php info [R=301]
+
+RewriteRule ^info/(.*) info.php?info=$1 [END]
+RewriteRule ^/$ index.php [END]
+RewriteRule index.php "/" [R=301,L]
+
+
+RewriteRule ^contacts$ contacts.php [END]
+RewriteRule ^contacts.php$ contacts [R=301]
+
+RewriteCond %{HTTP_HOST} ^www.artefact-spb.ru [NC]
+
+RewriteRule ^(.*) http://artefact-spb.ru/$1 [L,R]
