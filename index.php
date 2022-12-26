@@ -461,8 +461,8 @@
                                         </a>
 									</p>
 									<p>
-                                        <a class="contact_block__phone-link" href="tel:+78127126570">
-                                            +7(812) 712-65-70
+                                        <a class="contact_block__phone-link" href="tel:+78126007990">
+                                            +7(812) 600-79-90
                                         </a>
 									</p>
                                     <p>
@@ -640,22 +640,22 @@
 	<!-- /Yandex.Metrika counter -->
 
 	<!-- Global site tag (gtag.js) - Google Ads: 318540315 -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-318540315"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'AW-318540315');
-	</script>
-	<script>
-		gtag('event', 'conversion', {
-			'send_to': 'AW-318540315/qBo1CMrSr-oCEJuU8pcB'
-		});
-	</script>
+<!--	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-318540315"></script>-->
+<!--	<script>-->
+<!--		window.dataLayer = window.dataLayer || [];-->
+<!---->
+<!--		function gtag() {-->
+<!--			dataLayer.push(arguments);-->
+<!--		}-->
+<!--		gtag('js', new Date());-->
+<!---->
+<!--		gtag('config', 'AW-318540315');-->
+<!--	</script>-->
+<!--	<script>-->
+<!--		gtag('event', 'conversion', {-->
+<!--			'send_to': 'AW-318540315/qBo1CMrSr-oCEJuU8pcB'-->
+<!--		});-->
+<!--	</script>-->
 </body>
 
 </html>

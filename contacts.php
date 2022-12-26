@@ -88,8 +88,8 @@
                                         </a>
 									</p>
 									<p>
-                                        <a class="contact_block__phone-link" href="tel:+78127126570" itemprop="telephone">
-                                            +7(812)712-65-70
+                                        <a class="contact_block__phone-link" href="tel:+78126007990" itemprop="telephone">
+                                            +7(812) 600-79-90
                                         </a>
 									</p>
                                     <p>

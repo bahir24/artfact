@@ -1,16 +1,4 @@
-// window.onload = function(){
-  // alert('Страница загружена');
-
-  // setTimeout(animateContactHeader, 1000);
-  // let firstSlide =
-//   let firstSlideText = firstSlide.querySelectorAll('.content_lines p');
-//   firstSlideText.forEach(element => {
-//     setTimeout(addAnimateClass, 1000, element, 'animate__fadeInLeft');
-//   });
-
-// }
 if (document.readyState == 'loading') {
-  // ещё загружается, ждём события
   document.addEventListener('DOMContentLoaded', animateFirstSlideText);
   document.addEventListener('DOMContentLoaded', animateContactHeader);
 } else {
